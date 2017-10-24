@@ -29,11 +29,11 @@ Rooms.Nav.io = function(){
         Action.Nav();
     });
 
-    socket.on("auto", function(){
-        Dom.auto = 1;
+    socket.on("GuestMode", function(){
+        Dom.GuestMode = 1;
     });
-    socket.on("no_auto", function(){
-        Dom.auto = 0;
+    socket.on("GuestModeEnd", function(){
+        Dom.GuestMode = 0;
     });
 
     // socket.on("video", function(){

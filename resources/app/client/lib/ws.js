@@ -2,6 +2,7 @@ var Port = 3000;
 
 var WebSocketServer = require('ws').Server;
 var wss = new WebSocketServer({ port: Port });
+console.log("wss",wss);
 
 // document.getElementById("port").innerText = "PORT "+Port;
 
